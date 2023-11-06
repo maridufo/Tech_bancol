@@ -1,7 +1,0 @@
-address
-calle 53 # 55 a 67
-calle 44 # 89 b 44
-carrera 50 # 38 a 39
-carrera 102 bb num 49 a 30
-carrera 99 a # 48 b 29
-1600 Amphitheatre Parkway
