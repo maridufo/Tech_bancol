@@ -52,7 +52,7 @@ def generate_coordinates():
         csv_writer.writeheader()
 
         for row in rows_list:
-            address = row["txt address"]
+            address = row["Address_name"]
             coordinates = get_coordinates(address)
 
             if coordinates:

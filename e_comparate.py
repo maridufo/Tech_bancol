@@ -19,7 +19,7 @@ def addresses_compare(txt_addresses, csv_addresses, threshold=90):
         best_match = max(csv_addresses, key=lambda x: fuzz.ratio(txt_addresses, x))
         match_percent = fuzz.ratio(txt_addresses, best_match)
         if match_percent >= threshold and txt_addresses != best_match:
-            results.append({"txt address": txt_addresses, "match": f"{match_percent}%"})
+            results.append({"Address_name": txt_addresses, "%match": f"{match_percent}%"})
     return results
 
 
@@ -33,7 +33,7 @@ def results_hom():
     results = addresses_compare(txt_addresses, csv_addresses)
 
     with open("results_homo.csv", "w", encoding="utf-8") as output_file:
-        fieldnames = ["txt address", "match"]
+        fieldnames = ["Address_name", "%match"]
         writer = csv.DictWriter(output_file, fieldnames=fieldnames)
 
         writer.writeheader()
