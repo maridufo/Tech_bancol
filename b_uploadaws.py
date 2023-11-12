@@ -1,7 +1,7 @@
 import boto3
 
 
-def upload_s3():
+def upload_to_s3():
     """
     Upload file to S3.
     """
@@ -20,7 +20,7 @@ def upload_s3():
 
 
 def run():
-    upload_s3()
+    upload_to_s3()
 
 
 if __name__ == "__main__":
